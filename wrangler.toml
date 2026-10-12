@@ -1,0 +1,16 @@
+name = "getgit"
+main = "worker.js"
+compatibility_date = "2026-10-12"
+workers_dev = true
+
+# Create a D1 database, then replace the placeholder below with its database_id.
+[[d1_databases]]
+binding = "DB"
+database_name = "getgit-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+[vars]
+# Use your real public site origin after deploying, e.g. https://getgit.example.com
+SITE_URL = ""
+# Optional settings; configure secrets with `npx wrangler secret put NAME`.
+AI_MODEL = "claude-3-5-haiku-latest"

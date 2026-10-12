@@ -1,0 +1,15 @@
+{
+  "name": "getgit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GetGit — GitHub project discovery app powered by Cloudflare Workers and D1.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "d1:create": "wrangler d1 create getgit-db"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
